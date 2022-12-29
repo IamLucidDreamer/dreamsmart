@@ -1,0 +1,101 @@
+﻿body {
+}
+.input-group .border-none {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #E2E2EA
+}
+.input-group-text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #E2E2EA;
+    background-color:transparent
+}
+.btn-primary-gradien {
+    background-image: linear-gradient(to top,  #3C5A99 51%, #3C5A99 100%);
+    border: none;
+}
+.btn-secondary-gradien {
+    background-image: linear-gradient(to top,  #C01C9C 51%, #FF2470 100%);
+}
+.btn-success-gradien {
+    background-image: linear-gradient(to top, #7AA146 51%, #97CC4F 100%);
+}
+.btn-danger-gradien {
+    background-image: linear-gradient(to right, #EA4335 51%, #EA4335 100%);
+}
+.text-black {
+    color:black
+}
+.text-white {
+    color: white
+}
+.login-card-shadow {
+    box-shadow: 0px 5px 10px #666666;
+}
+.login-card .login-card-profile {
+    width: 800px;
+    padding: 10px;
+}
+.border-tab.nav-tabs .nav-item .nav-link {
+    font-size:12px;
+}
+.border-tab.nav-primary .nav-item .nav-link.active, .border-tab.nav-primary .nav-item .nav-link.show, .border-tab.nav-primary .nav-item .nav-link:focus, .border-tab.nav-primary .nav-item .nav-link:hover {
+    color: #7AA146;
+}
+.border-tab.nav-primary .nav-item .nav-link.active, .border-tab.nav-primary .nav-item .nav-link.show, .border-tab.nav-primary .nav-item .nav-link:focus {
+    border-bottom: 2px solid #7AA146
+}
+.form-control::placeholder {
+    color: #B5B5BE;
+    font-size:10px;
+}
+.select {
+    color: #B5B5BE;
+   
+}
+.form-control {
+    border-radius: .50em;
+}
+.checkbox-solid-success label::before {
+    background-color: #7AA146;
+    border-color: #7AA146;
+}
+@media (max-width:460px) {
+    .testimonial-landing-page {
+            display:none;
+            width: 400px;
+            position: static;
+            top: 0;
+            left: 0;
+            transform: unset;
+        }
+
+    .login-card .login-card-profile {
+        width: unset;
+        padding: 10px;
+    }
+    }
+
+    .testimonial-landing-page {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-40%, -50%);
+    }
+
+    .sticky-header header {
+        background: unset;
+    }
+
+    .navbar-expand-xl .navbar-collapse {
+        background: unset;
+    }
+
+    .login-card {
+        align-items: unset;
+        min-height: unset;
+    }

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-deafult: #3949ab; --theme-secondary: #4fc3f7;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Dream Smart Academy Dashboard">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Dream Smart Academy Dashboard</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/chartist.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/timepicker.css">
+
+    <!-- Plugins css Ends-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/sweetalert2.css">
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body onload="startTime()">
+
+    <!-- loader ends-->
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header" style="background-image: url(assets/images/auth-bg.png); background-size: 100% 100%; height:300px ">
+            <div class="header-wrapper row m-0">
+
+                <div class="header-logo-wrapper col-auto p-0">
+                    <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo-white.png" alt=""></a></div>
+                    <div class="toggle-sidebar"><i class="fa fa-bars text-white" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="nav-right col-12 pull-right right-header p-0">
+                    <ul class="nav-menus">
+
+
+                        <li class="onhover-dropdown">
+                            <div class="notification-box"><i class="fa fa-bell-o text-white" style="font-size:22px"> </i><span class="badge rounded-pill badge-success">3</span></div>
+                            <div class="onhover-show-div notification-dropdown">
+                                <h6 class="f-18 mb-0 dropdown-title">Notitications                               </h6>
+                                <ul>
+                                    <li class="b-l-primary border-4">
+                                        <p>
+                                            <span style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br />
+                                            <span class="font-success"><i class="fa fa-comment-o fa-2x" aria-hidden="true"></i></span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+                                        </p><span class="text-muted">12 Minutes ago</span>
+
+
+                                    </li>
+                                    <li class="b-l-success border-4">
+                                        <p>
+                                            <span style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br />
+                                            <span class="font-success"><i class="fa fa-comment-o fa-2x" aria-hidden="true"></i></span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+                                        </p><span class="text-muted">12 Minutes ago</span>
+
+
+                                    </li>
+                                    <li class="b-l-info border-4">
+                                        <p>
+                                            <span style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br />
+                                            <span class="font-success"><i class="fa fa-comment-o fa-2x" aria-hidden="true"></i></span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+                                        </p><span class="text-muted">12 Minutes ago</span>
+
+
+                                    </li>
+                                    <li class="b-l-warning border-4">
+                                        <p>
+                                            <span style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br />
+                                            <span class="font-success"><i class="fa fa-comment-o fa-2x" aria-hidden="true"></i></span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+                                        </p><span class="text-muted">12 Minutes ago</span>
+
+
+                                    </li>
+                                    <li><a class="f-w-700" href="#">View All</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-question-circle-o text-white" style="font-size:22px" aria-hidden="true"></i> <span class="lang-txt text-white">&nbsp;Help</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- Page Header Ends                              -->
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div class="sidebar-wrapper" style="background: #194C8E">
+                <div>
+                    <div class="logo-wrapper" style="background: #194C8E;text-align:center;">
+                        <a href="index.html"><img class="img-fluid for-light" src="assets/images/logo-white.png" style="width:200px" alt=""><img class="img-fluid for-dark" src="assets/images/logo-white.png   " alt=""></a>
+
+                    </div>
+                    <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a></div>
+                    <nav class="sidebar-main" style="background:white;border-radius:0px 15px 0 0;">
+                        <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                        <div id="sidebar-menu">
+                            <ul class="sidebar-links" id="simple-bar">
+                                <li class="back-btn">
+                                    <a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
+                                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                                </li>
+                                <li class="sidebar-main-title">
+                                    <div class="media profile-media">
+                                        <img class="b-r-8 img-60" src="assets/shape.png" alt="">
+                                        <div class="media-body p-l-15 p-t-10">
+                                            <h6>John Doe</h6>
+                                            <strong class="text-muted">Gold Member</strong>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav current-inactive" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" color="#f89c72">
+                                            <g id="Group_8105" data-name="Group 8105" transform="translate(-62 -197)">
+                                                <rect id="Rectangle_80" data-name="Rectangle 80" width="11" height="11" rx="3" transform="translate(75 197)" fill="#f89c72" />
+                                                <rect id="Rectangle_79" data-name="Rectangle 79" width="11" height="11" rx="3" transform="translate(62 197)" fill="#f89c72" />
+                                                <rect id="Rectangle_81" data-name="Rectangle 81" width="11" height="11" rx="3" transform="translate(75 210)" fill="#f89c72" />
+                                                <rect id="Rectangle_82" data-name="Rectangle 82" width="11" height="11" rx="3" transform="translate(62 210)" fill="#f89c72" />
+                                            </g>
+                                        </svg>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="sidebar-list  current-active-nav">
+                                    <a class="sidebar-link sidebar-title link-nav current-active" href="support-ticket.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41.412" height="28.939" viewBox="0 0 41.412 28.939">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#f89c72" />
+                                                    <stop offset="1" stop-color="#ef633e" />
+                                                </linearGradient>
+                                            </defs>
+                                            <g id="Group_8452" data-name="Group 8452" transform="translate(-1182.573 -1880.53)">
+                                                <path id="Path_4421" data-name="Path 4421" d="M2858.322,1882.237h-11.209v-.653a1.055,1.055,0,0,0-1.054-1.054h-2.15a1.054,1.054,0,0,0-1.054,1.054v.653h-11.209v3.222a5.347,5.347,0,0,1,1.707,1.289v-2.8h23.263v16.445h-21.258a4.965,4.965,0,0,0-.219,1.708h8.046l-4.833,4.833a.854.854,0,0,0,1.207,1.208l5.556-5.556,5.556,5.556a.854.854,0,0,0,1.207-1.208l-4.834-4.833h11.278Z" transform="translate(-1634.336 0)" fill="url(#linear-gradient)" />
+                                                <path id="Path_4422" data-name="Path 4422" d="M1202.169,2779.6a16.057,16.057,0,0,0,5-5.888c.014-.031.075-.155.091-.186a1.837,1.837,0,0,0-.977-2.534,2.027,2.027,0,0,0-.868-.13c-1.179.04-1.49,1.482-2.534,2.982a26.191,26.191,0,0,1-2.546,2.574,13.96,13.96,0,0,1-1.32.853c-2.433,1.429-13.974,1.315-16.383,12.265a1.868,1.868,0,0,0,1.686,2.308,4.577,4.577,0,0,0,.5-.052c1.423-.2,1.273-2.394,2.04-3.633a18.12,18.12,0,0,1,.972-1.561c.017-.023.6-.682,1.32-1.451.007-.007,1.044-.867,1.065-.878v7.573h9.584v-7.687A5.565,5.565,0,0,1,1202.169,2779.6Z" transform="translate(0 -882.378)" fill="url(#linear-gradient)" />
+                                                <path id="Path_4423" data-name="Path 4423" d="M2092.141,2495.177a4.344,4.344,0,1,0-4.344-4.344A4.322,4.322,0,0,0,2092.141,2495.177Z" transform="translate(-897.135 -600.546)" fill="url(#linear-gradient)" />
+                                            </g>
+                                        </svg>
+                                        My Session
+                                    </a>
+                                </li>
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.9" height="31" viewBox="0 0 27.9 31">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#f89c72" />
+                                                    <stop offset="1" stop-color="#ef633e" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Shape" d="M24.8,31H3.1A3.1,3.1,0,0,1,0,27.9V6.2A3.1,3.1,0,0,1,3.1,3.1H4.65V0h3.1V3.1h12.4V0h3.1V3.1H24.8a3.1,3.1,0,0,1,3.1,3.1V27.9A3.1,3.1,0,0,1,24.8,31ZM3.1,10.85V27.9H24.8V10.85Zm18.6,12.4H18.6v-3.1h3.1v3.1Zm-6.2,0H12.4v-3.1h3.1v3.1Zm-6.2,0H6.2v-3.1H9.3v3.1Zm12.4-6.2H18.6v-3.1h3.1v3.1Zm-6.2,0H12.4v-3.1h3.1v3.1Zm-6.2,0H6.2v-3.1H9.3v3.1Z" fill="url(#linear-gradient)" />
+                                        </svg>
+                                        <span>Upcomming Session</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#f89c72" />
+                                                    <stop offset="1" stop-color="#ef633e" />
+                                                </linearGradient>
+                                            </defs>
+                                            <g id="Group_8499" data-name="Group 8499" transform="translate(-297.65 -587.65)">
+                                                <circle id="Ellipse_3237" data-name="Ellipse 3237" cx="15.5" cy="15.5" r="15.5" transform="translate(297.65 587.65)" fill="url(#linear-gradient)" />
+                                                <path id="Path_57747" data-name="Path 57747" d="M362.033,1078.017a3.975,3.975,0,0,0-3.009-3.856l-2.436-.6a1.7,1.7,0,0,1-.935-.614,1.669,1.669,0,0,1-.353-1.038,1.7,1.7,0,0,1,1.7-1.7h1.061a1.7,1.7,0,0,1,1.691,1.515,1.136,1.136,0,1,0,2.257-.253,3.964,3.964,0,0,0-3.375-3.481v-.6a1.136,1.136,0,0,0-2.272,0V1068a3.966,3.966,0,0,0-.324,7.763l2.436.6a1.7,1.7,0,0,1-.412,3.351H357a1.7,1.7,0,0,1-1.691-1.515,1.136,1.136,0,1,0-2.257.253,3.967,3.967,0,0,0,3.309,3.474v.607a1.136,1.136,0,1,0,2.272,0v-.6a3.951,3.951,0,0,0,3.4-3.916Z" transform="translate(-44.381 -471.811)" fill="#fff" />
+                                            </g>
+                                        </svg>
+                                        <span>My Earnings</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#f89c72" />
+                                                    <stop offset="1" stop-color="#ef633e" />
+                                                </linearGradient>
+                                            </defs>
+                                            <g id="Group_8497" data-name="Group 8497" transform="translate(-91 -649)">
+                                                <path id="Path_57746" data-name="Path 57746" d="M298.785,317.6h0a4.516,4.516,0,0,0-4.523-.006h0a.5.5,0,0,1-.682-.183l-2.508-4.327a.5.5,0,0,1,.181-.681l.015-.008a4.5,4.5,0,0,0,2.243-3.9h0a4.513,4.513,0,0,0-2.251-3.894l-.008,0a.5.5,0,0,1-.18-.678l2.509-4.332a.5.5,0,0,1,.679-.181h0a4.518,4.518,0,0,0,4.526,0l0,0a4.5,4.5,0,0,0,2.241-3.891h0a.505.505,0,0,1,.506-.5h5.934a.505.505,0,0,1,.505.5h0a4.5,4.5,0,0,0,2.241,3.891l0,0a4.518,4.518,0,0,0,4.525,0h0a.5.5,0,0,1,.68.183l2.509,4.329a.5.5,0,0,1-.181.679l-.012.008a4.5,4.5,0,0,0-2.244,3.9h0a4.514,4.514,0,0,0,2.252,3.9l.006,0a.5.5,0,0,1,.18.678l-2.509,4.332a.5.5,0,0,1-.68.181h0a4.518,4.518,0,0,0-4.525,0h0a4.5,4.5,0,0,0-2.243,3.893h0a.5.5,0,0,1-.505.5h-5.939a.5.5,0,0,1-.5-.5h0A4.5,4.5,0,0,0,298.785,317.6Z" transform="translate(-200 354)" fill="url(#linear-gradient)" />
+                                                <circle id="Ellipse_3236" data-name="Ellipse 3236" cx="4.212" cy="4.212" r="4.212" transform="translate(100.309 658.309)" fill="#fff" />
+                                            </g>
+                                        </svg>
+
+                                        <span>My Setting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <hr style="border-top: 1px solid #E9E9EE" />
+                                </li>
+                                <li><a href="" style="font-size: 10px; color: #9FA4AF">About Us</a></li>
+                                <li><a href="" style="font-size: 10px; color: #9FA4AF">How It Works</a></li>
+                                <li><a href="" style="font-size: 10px; color: #9FA4AF">Resources and Articles</a></li>
+                                <li><a href="" style="font-size: 10px; color: #9FA4AF">Logout</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+                    </nav>
+
+                </div>
+            </div>
+            <!-- Page Sidebar Ends-->
+            <div class="page-body">
+
+                <!-- Container-fluid starts-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 xl-100 morning-sec box-col-12">
+                            <h1 class="f-w-500 text-white">My Session</h1>
+                            <p class="text-white">Here whats happing in your account today</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 xl-100 c box-col-6">
+                            <div class="card gradient-primary">
+                                <div class="card-body p-4 pt-2">
+                                    <div class="row mt-0">
+                                        <div class="col-sm-12">
+                                            <ul class="nav nav-tabs border-tab nav-primary" id="info-tab" role="tablist">
+                                                <li class="nav-item"><a class="nav-link active" id="info-home-tab" data-bs-toggle="tab" href="#info-home" role="tab" aria-controls="info-home" aria-selected="true" data-bs-original-title="" title=""> All Session <span class="text-muted f-8">(100)</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" id="profile-info-tab" data-bs-toggle="tab" href="#info-profile" role="tab" aria-controls="info-profile" aria-selected="false" data-bs-original-title="" title=""> Ongoing Session  <span class="text-muted f-8">(70)</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" id="contact-info-tab" data-bs-toggle="tab" href="#info-contact" role="tab" aria-controls="info-contact" aria-selected="false" data-bs-original-title="" title="">Completed Session  <span class="text-muted f-8">(30)</span></a></li>
+                                            </ul>
+                                            <div class="tab-content" id="info-tabContent">
+                                                <div class="tab-pane fade show active" id="info-home" role="tabpanel" aria-labelledby="info-home-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" style="color: #ced4da; border: 1px solid #ced4da; border-right: 0px;"><i class="fa fa-search" aria-hidden="true"></i>  </span>
+                                                                <input class="form-control" placeholder="which client are you looking for?" style="border-right:0px;border-left:0px" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text" style="color: #ced4da;border: 1px solid #ced4da;border-left: 0px"><i class="fa fa-list"></i>  </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table f-12">
+                                                            <thead style="background: #F1F1F5;">
+                                                                <tr>
+
+                                                                    <th class="text-muted text-uppercase" scope="col">CLEINT NAME</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Total Sessiont Taken</th>
+
+                                                                    <th class="text-muted text-uppercase" scope="col">Last Session</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Status</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">&nbsp;</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-success"><i class="fa fa-check-circle"></i> Completed</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-success"><i class="fa fa-check-circle"></i> Completed</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-success"><i class="fa fa-check-circle"></i> Completed</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td><a href="#" class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="info-profile" role="tabpanel" aria-labelledby="profile-info-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" style="color: #ced4da; border: 1px solid #ced4da; border-right: 0px;"><i class="fa fa-search" aria-hidden="true"></i>  </span>
+                                                                <input class="form-control" placeholder="which client are you looking for?" style="border-right:0px;border-left:0px" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text" style="color: #ced4da;border: 1px solid #ced4da;border-left: 0px"><i class="fa fa-list"></i>  </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table  f-12">
+                                                            <thead style="background: #F1F1F5;">
+                                                                <tr>
+
+                                                                    <th class="text-muted text-uppercase" scope="col">CLEINT NAME</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Total Sessiont Taken</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Start Session</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Last Session</th>
+                                                                    
+                                                                    <th class="text-muted text-uppercase" scope="col">Status</th>
+                                                                    <th class="text-muted text-uppercase" scope="col"></th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+
+
+                                                                    <td><span class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</span></td>
+                                                                    <td><a href="#" class="btn btn-sm btn-success-gradien btn-block w-100"><i class="fa fa-check-circle"></i> Mark as Completed</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+
+
+                                                                    <td><span class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</span></td>
+                                                                    <td><a href="#" class="btn btn-sm btn-success-gradien btn-block w-100"><i class="fa fa-check-circle"></i> Mark as Completed</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+
+
+                                                                    <td><span class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</span></td>
+                                                                    <td><a href="#" class="btn btn-sm btn-success-gradien btn-block w-100"><i class="fa fa-check-circle"></i> Mark as Completed</a></td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+
+
+                                                                    <td><span class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</span></td>
+                                                                    <td><a href="#" class="btn btn-sm btn-success-gradien btn-block w-100"><i class="fa fa-check-circle"></i> Mark as Completed</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+
+
+                                                                    <td><span class=" text-warning"><i class="fa fa-clock-o"></i> Ongoing</span></td>
+                                                                    <td><a href="#" class="btn btn-sm btn-success-gradien btn-block w-100"><i class="fa fa-check-circle"></i> Mark as Completed</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="info-contact" role="tabpanel" aria-labelledby="contact-info-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" style="color: #ced4da; border: 1px solid #ced4da; border-right: 0px;"><i class="fa fa-search" aria-hidden="true"></i>  </span>
+                                                                <input class="form-control" placeholder="which client are you looking for?" style="border-right:0px;border-left:0px" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text" style="color: #ced4da;border: 1px solid #ced4da;border-left: 0px"><i class="fa fa-list"></i>  </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table f-12">
+                                                            <thead style="background: #F1F1F5;">
+                                                                <tr>
+
+                                                                    <th class="text-muted text-uppercase" scope="col">CLEINT NAME</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Total Sessiont Taken</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Start Session</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Last Session</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Engagement Level</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Comments</th>
+                                                                    <th class="text-muted text-uppercase" scope="col">Status</th>
+                                                                    <th class="text-muted text-uppercase" scope="col"></th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>Engaged</td>
+                                                                    <td><a data-bs-toggle="modal" href="javscript:void(0)" class="text-black text-underline" data-bs-target="#myModal">View Comments</a></td>
+                                                                    <td><a href="#" class=" text-success"><i class="fa fa-check-circle"></i> Completed</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <img class="img-40 rounded-circle pull-left p-2" src="assets/images/user/1.jpg" alt="#"> <a href=""> John Kameron Deo<br /><span class="text-success">Faclitator/FastPaced/Outging</span></a>
+
+                                                                    </td>
+                                                                    <td>3/20 Sessions</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>May 18,2022 10:40 AM</td>
+                                                                    <td>Engaged</td>
+                                                                    <td><a class=" text-success" href="javscript:void(0)" data-bs-toggle="modal" data-bs-target="#myModalComment">Add Comments</a></td>
+                                                                    <td><a href="#" class=" text-success"><i class="fa fa-check-circle"></i> Completed</a></td>
+                                                                    <td><a href="#" class=" text-primary"> view More</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid Ends-->
+            </div>
+            <!-- footer start-->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 footer-copyright text-center">
+                            <p class="mb-0">Copyright 2020 © Mastermind Lounge ™  </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content  text-center p-2">
+                <a class="btn-gradient-blue" data-bs-dismiss="modal">X</a>
+
+                <center>
+                    <h4 class="modal-title">Session Comment</h4>
+                </center>
+                <!-- Modal body -->
+                <div class="modal-body f-10 text-muted">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModalComment">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a class="btn-gradient-blue" data-bs-dismiss="modal">X</a>
+                <!-- Modal Header -->
+                <div class="modal-header" style="display: unset; border-bottom:unset">
+                    <center>
+                        <h4 class="modal-title text-center">Add Comment</h4>
+                    </center>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="date-picker">
+                        <div class="theme-form">
+                            <div class="mb-2 row g-3">
+
+                                <div class="col-xl-12 col-sm-9">
+                                    <div class="input-group">
+
+                                        <textarea class="form-control" placeholder="Enter here"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="theme-form">
+                            <div>
+                                <center>
+                                    <button class="btn btn-success-gradien   mt-4 mb-3" style="width:70%;" type="submit">Add</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="assets/js/scrollbar/simplebar.js"></script>
+    <script src="assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <script src="assets/js/sidebar-menu.js"></script>
+    <script src="assets/js/chart/chartist/chartist.js"></script>
+    <script src="assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
+    <script src="assets/js/chart/knob/knob.min.js"></script>
+    <script src="assets/js/chart/knob/knob-chart.js"></script>
+    <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="assets/js/notify/bootstrap-notify.min.js"></script>
+    <script src="assets/js/dashboard/default.js"></script>
+    <script src="assets/js/notify/index.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="assets/js/typeahead/handlebars.js"></script>
+    <script src="assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="assets/js/typeahead-search/handlebars.js"></script>
+    <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="assets/js/chart/google/google-chart-loader.js"></script>
+    <script src="assets/js/chart/google/google-chart.js"></script>
+    <script src="assets/js/modal-animated.js"></script>
+    <script src="assets/js/time-picker/jquery-clockpicker.min.js"></script>
+    <script src="assets/js/time-picker/highlight.min.js"></script>
+    <script src="assets/js/time-picker/clockpicker.js"></script>
+    <script src="assets/js/tooltip-init.js"></script>
+
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="assets/js/script.js"></script>
+
+    <!-- login js-->
+    <!-- Plugin used-->
+</body>
+</html>
